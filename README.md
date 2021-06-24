@@ -47,7 +47,7 @@ period-7 and about a day for period-8 on an AMD Ryzen 9 3900X.
 ### Settings
 
 `PERIOD(p` <br>
-Sets the period to p and constructs the elementary symmetric functions (C++ array sigma[]). For longer peiods (>= 9) this may take some time.
+Sets the period to p and constructs the elementary symmetric functions (C++ array sigma[]). 
 
 `SIMPLIFYON` <br>
 switches automatic simplification ON - which is the standard configuration.
@@ -170,7 +170,7 @@ are set into the list of equations starting at id number tgtid.
 
 ## Limitations
 - in case of an error, the software prints a message and mostly exits "dirty". Saving of intermediate results is recommended.
-- currently, the maximum period length is 12 (C++ variable ANZSYMVARS) and can be increased up to 26. Currently (June 2021) I am trying to construct period-9.
+- currently, the maximum period length is 12 (C++ variable ANZSYMVARS) and can be increased up to 26.
 - Input length of lines is 2000 characters. Especially for SETSTR, this requires to split the function to set into several parts and adding them. Care must be taken to switch off automatic simplification for those parts.
 - factoring is currently performed externally - either manually or by the command XFACTOR2 which requires maxima and was curently tested with version 5.42.2.
 - only the variables that describe elementary symmetric functions (uppercase letters A-Z) are accessible. The seed c or the
